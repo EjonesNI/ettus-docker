@@ -46,7 +46,7 @@ the following command from your home directory:
     ./meta-ettus/contrib/build_imgs_package.sh n3xx v3.15.0.0
 
 Note this will not only build the filesystem, but it will also zip it up in the
-same way files are packaged for shipping with `uhd_image_downloader`.
+same way files are packaged for shipping with `uhd_image_downloader`. If you experiences failures post build and SDK such as "name not matched", "missing file or directory" then update build_imgs_package.sh commenting line TMP_OUTPUT_DIR=tmp-musl and uncommenting TMP_OUTPUT_DIR=tmp-glibc.
 
 If you prefer a more manual process, refer to `meta-ettus/contrib/setup_build_env.sh`
 which has encoded all the settings used for building official filesystem releases.
